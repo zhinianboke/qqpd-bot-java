@@ -38,7 +38,7 @@ public class test_weather {
         try {
             Document document = null;
             try {
-                document = Jsoup.connect("http://kloping.top/api/get/weather?address=" + s0).ignoreContentType(true)
+                document = Jsoup.connect("http://hm.suol.cc/API/tq.php?n=1&msg=" + s0).ignoreContentType(true)
                         .get();
             } catch (IOException e) {
                 e.printStackTrace();

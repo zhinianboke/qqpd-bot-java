@@ -97,6 +97,9 @@ public class Starter implements Runnable {
     public final StarterObjectApplication APPLICATION = new StarterObjectApplication(Resource.class);
 
     private ContextManager contextManager;
+    
+    public Starter() {
+    }
 
     public Starter(String appid, String token) {
         this(appid, token, null);
@@ -188,13 +191,13 @@ public class Starter implements Runnable {
 
     @Data
     public static class Config {
-        public boolean sandbox = false;
-        private String appid;
-        private String token;
+        public boolean sandbox = true;
+        private String appid = "102383896";
+        private String token = "t22ADQUWfxGWJWBJdwLlYJZupXofr8a5";
         /**
          * 不使用v2群聊时可不设置
          */
-        private String secret;
+        private String secret = "ep1DPbnzBObo1ERes6KYm0ETixCRgvBR";
         /**
          * code 从 {@link io.github.kloping.qqbot.api.Intents#getCode }
          */
